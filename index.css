@@ -1,0 +1,681 @@
+@font-face {
+    font-family: "caviarDreams";
+    src: url(CaviarDreams.ttf);
+}
+
+body{
+    background-color: rgb(230, 230, 230);
+    
+}
+*{
+    user-select: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* ACA EMPIEZA HEADER */
+header{
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    position: absolute;
+    position: fixed;
+    z-index: 5000;
+    
+}
+
+.divLogo{
+    margin: auto;
+}
+.imgLogo{
+    width: 110px; 
+}
+
+.divMenu, .divCruz{
+    margin-left: 1vw;
+}
+.imgMenu{
+    width: 35px;
+    margin-top: 35px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.imgCruz{
+    width: 40px;
+    margin-top: 35px;
+    margin-left: 0px;
+    display: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    cursor: pointer;
+}
+
+.divCarrito{
+    margin-right: 1vw;
+}
+.contadorCarrito{
+    font-family: caviarDreams;
+    font-size: 15px;
+    color: rgb(159, 255, 215);
+    font-weight:800;
+    width: 25px;
+    text-align: center;
+    border-radius: 100px;
+    padding: 3px;
+    
+    
+}
+.imgCarrito{
+    width: 40px;
+    margin-top: 27px;
+    margin-right: 2vw;
+    cursor: pointer;
+}
+/* ACA TERMINA HEADER */
+
+/* ACA EMPIEZA ASIDE */
+aside{
+    position: absolute;
+    position: fixed;
+    
+    z-index: 1000;
+    transform: translateY(75px);
+    display: none;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    box-shadow: 1px 1px 3px 0px rgb(87, 87, 87);
+}
+
+.hijosAside{
+    font-size: 25px;
+    font-family: caviarDreams;
+    margin: 20px;
+    margin-right: 100px;
+    
+}
+
+.copyrightAside{
+    font-family: caviarDreams;
+    font-size: 15px;
+    text-align: right;
+    margin: 5px;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+/* ACA TERMINA ASIDE */
+
+/* ACA EMPIEZA SECTION */
+section{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.imgPortada{
+    width: 200px;
+    margin: auto;
+}
+
+.h2{
+    width: 100vw;
+    position: absolute;
+    transform: translate(0vw, 60vh);
+}
+h2{
+    text-align: center;
+    font-family: caviarDreams;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+.flechaAbajo{
+     font-size: 80px;
+     transform: translate(80vw, 78vh);
+     position: absolute;
+     color: rgba(0, 0, 0, 0.836);
+    animation-name: flechaAbajo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction:alternate;
+    
+}
+@keyframes flechaAbajo{
+    0%{
+        transform: translate(80vw, 78vh);
+    }
+    100%{
+        transform: translate(80vw, 80vh);
+        color: rgba(0, 0, 0, 0.452);
+    }
+}
+/* ACA TERMINA SECTION */
+
+/* ACA EMPIEZA ARTICLE */
+article{
+    display:flex;
+    
+}
+.contenedorRemera1{
+    margin:auto;
+    padding: 10px;
+    background-color: rgb(171, 137, 194);
+    cursor: pointer;
+}
+.divRemera1{
+    margin: auto;
+}
+.remera1{
+    width: 250px;
+    
+}
+.nombreRemera{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    font-family: caviarDreams;
+}
+
+.contenedorRemera2{
+    margin:auto;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: rgb(93, 154, 204);
+    cursor: pointer;
+}
+.divRemera2{
+    margin: auto;
+}
+.remera2{
+    width: 250px;
+    
+}
+.nombreRemera{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    font-family: caviarDreams;
+}
+
+.contenedorRemera3{
+    margin:auto;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: rgb(209, 110, 110);
+    cursor: pointer;
+}
+.divRemera3{
+    margin: auto;
+}
+.remera3{
+    width: 250px;
+    
+}
+.nombreRemera{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    font-family: caviarDreams;
+}
+/* ACA TERMINA ARTICLE */
+
+
+/* ACA EMPIEZA FOOTER */
+footer{
+    display: flex;
+    width: 100vw;
+    height: 300px;
+    margin-top: 100vh;
+    
+}
+
+.divInstagram{
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.imgInstagram{
+    width: 40px;
+    
+}
+
+.copyright{
+    width: 100vw;
+    position: absolute;
+    margin-top: 230px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/* ACA TERMINA FOOTER */
+
+
+
+
+/* ACA EMPIEZA INFO REMERA 1  */
+.tituloInfo{
+    text-align: center;
+    font-size: 20px;
+    font-family: caviarDreams;
+    padding: 10px;
+    border-top: 1px solid rgb(0, 211, 123);
+    border-left: 1px solid rgb(0, 211, 123);
+}
+.descripcion{
+    font-size: 15px;
+}
+.contenedorRemera{
+    /* background-color: rgba(168, 168, 168, 0.507); */
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10vh;
+}
+.carrousel{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.atras, .adelante{
+    font-size: 30px;
+    align-self: center;
+    z-index: 500;
+    margin-left: -35px;
+    margin-right: -35px;
+    color: rgba(0, 0, 0, 0.300);
+    
+}
+.atras:hover, .adelante:hover{
+    color: rgba(0, 0, 0, 0.600);
+    cursor: pointer;
+}
+
+.img{
+    width: 300px;
+    
+}
+
+.precio{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-family: caviarDreams;
+    font-size: 23px;
+    font-weight: 900;
+    color: rgb(61, 61, 61);
+}
+.agregar{
+    
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    font-family: caviarDreams;
+}
+
+input{
+    width: 40px;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 8px;  
+    outline: none;  
+    
+}
+button{
+    border: none;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid rgb(119, 119, 119);
+    padding: 5px;
+    border-radius: 8px;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(172, 172, 172);
+}
+.exito{
+    color: rgb(0, 133, 77);
+    text-align: center;
+}
+.fracaso{
+    color:rgb(233, 0, 0);
+    text-align: center;
+    font-family: caviarDreams;
+    font-size: 15px;
+}
+/* ACA TERMINA INFO REMERA 1  */
+
+/* ACA EMPIEZA CARRITO */
+.tituloCarrito{
+    margin-top: 90px;
+    width: 100vw;
+    
+}
+.tituloCarrito h2{
+font-size: 20px;
+}
+.subtituloCarrito{
+    font-family: caviarDreams;
+    width: 100vw;
+    text-align: center;
+}
+
+.referencia{
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: 40vw 20vw 30vw;
+    justify-content: center;
+    font-family: caviarDreams;
+    margin-top: 25px;
+    font-size: 20px;
+    background-color: rgb(212, 212, 212);
+    
+    margin-left: 0px;
+    margin-right: 0px;
+   
+   
+}
+.referenciaProducto{
+    border-right: 1px solid black;
+    text-align: center;
+}
+.referenciaTalle{
+    border-right: 1px solid black;
+    text-align: center;
+}
+.referenciaCantidad{
+   
+   text-align: center;
+}
+
+
+.contenedorCaracteristicas{
+    display: grid;
+    grid-template-columns: 40vw 20vw 30vw;
+    height: 100px;
+    justify-content: center;
+    font-family: caviarDreams;
+    padding-top: 5px;
+    font-size: 20px;
+    background-color: rgb(241, 241, 241);
+    border-top: 1px solid rgb(182, 182, 182);
+}
+.productoCaracteristicas{
+    border-right: 1px solid rgb(182, 182, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.productoTalle{
+    border-right: 1px solid rgb(182, 182, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.productoCantidad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.eliminar{
+    display: flex;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;  
+    background-color: rgb(255, 65, 65, 0.89);
+    justify-content: center;
+    font-family: caviarDreams;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(49, 49, 49);
+    align-items: center;
+    margin-bottom: 10px;
+}
+.productos{
+    text-align: center;
+}
+
+
+.compra{
+    width: 100vw;
+    margin-top: 30px;
+    display: flex;
+    
+    
+}
+.terminacionCompra{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    
+}
+.totalPrecio{
+    padding: 3px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-right-radius: 10px;
+    margin: 10px;
+}
+.terminarCompra{
+    height: 30px;
+    margin: auto;
+    background-color: rgb(73, 224, 141);
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: caviarDreams;
+    border-bottom: 5px solid rgb(141, 141, 141);
+    box-shadow: -2px 2px 3px 1px rgba(0, 0, 0, 0.200);
+    
+}
+.terminarCompra:hover, .terminarCompra:active {
+    cursor: pointer;
+    transform: translateY(5px);
+    border-bottom: 0px solid rgb(141, 141, 141);
+}
+.errorCompra{
+    font-family: caviarDreams;
+    text-align: center;
+    color: rgb(236, 74, 74);
+}
+b{
+    display: inline-block;
+}
+
+.contenedorConfirmarCompra{
+    display: none;
+    background-color: rgba(110, 110, 110, 0.671);
+    width: 100vw;
+    height: 100vh;
+    
+    position: absolute;
+    font-family: caviarDreams;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+.confirmarCompra{
+    
+    background-color: rgba(230, 230, 230, 0.76);
+    padding: 10px;
+    margin: auto;
+    
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.300);
+}
+
+.menos, .mas{
+    
+    margin: 1px;
+    font-size: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid rgb(126, 126, 126);
+}
+.menos:hover, .mas:hover{
+    border: 0px solid rgb(0, 0, 0);
+}
+.menos{
+    background-color: rgba(255, 0, 0, 0.600);
+}
+.mas{
+    background-color: rgba(26, 155, 0, 0.6);
+}
+/* ACA TERMINA CARRITO */
+
+
+/* ACA EMPIEZA CONTACTO */
+.h3contacto{
+    margin: auto;
+    margin-top: 100px;
+    font-size: 25px;
+    font-family: caviarDreams;
+}
+.h4contacto{
+    margin: auto;
+    margin-top: 20px;
+    font-family: caviarDreams;
+    margin-bottom: 20px;
+    text-align: center;
+}
+form{
+    margin: auto;
+    width: 90vw;
+    
+    
+}
+.formContenedor{
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.400);
+    border-radius: 5px;
+}
+.nombre, .email, .telefono, .mensaje, .divButton{
+    margin: auto;
+    
+    
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+input.inputNombre, input.inputEmail, input.inputTelefono, textarea.textareaMensaje{
+    width: 230px;
+    font-family: caviarDreams;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid black;
+    border-radius: 0;
+}
+textarea.textareaMensaje{
+   resize: none;
+   text-align: center;
+}
+.inputNombre{
+    margin-top: 15px;
+}
+button.button{
+    text-align: center;
+    font-family: caviarDreams;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 35px;
+    background-color: rgba(102, 255, 171, 0.5);
+    border: none;
+    border-bottom: 5px solid rgba(2, 134, 61, 0.692);
+    border-radius: 5px;
+}
+button.button:hover, button.button:active{
+    border-bottom: 5px solid rgba(102, 255, 171, 0);
+    transform: translateY(3px);
+}
+.errorContacto{
+    font-family: caviarDreams;
+    color: red;
+    text-align: center;
+}
+
+.contenedorMensajeExitoso{
+    width: 100vw;
+    position: absolute;
+    transform: translateY(20vh);
+}
+.tilde{
+    font-size: 50px;
+    
+}
+.mensajeExitoso{
+    background-color: rgba(102, 255, 171);
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-family: caviarDreams;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* ACA TERMINA CONTACTO */
+
+
+
+
+
+
+/* ACA EMPIEZA RESPONSIVE DSIGN */
+@media all and (min-width: 800px){
+    .flechaAbajo{
+        font-size: 80px;
+        transform: translate(90vw, 78vh);
+        position: absolute;
+        color: rgba(0, 0, 0, 0.836);
+       animation-name: flechaAbajo;
+       animation-duration: 1s;
+       animation-iteration-count: infinite;
+       animation-delay: 0s;
+       animation-direction:alternate;
+       
+   }
+   @keyframes flechaAbajo{
+       0%{
+           transform: translate(90vw, 78vh);
+       }
+       100%{
+           transform: translate(90vw, 80vh);
+           color: rgba(0, 0, 0, 0.452);
+       }
+   }
+
+   form{
+    margin: auto;
+    width: 50vw;
+    
+    
+}
+}
+
+
+@media all and (min-height: 550px){
+    .img{
+        height: 400px;
+        width: 300px;
+    }
+    img{
+        object-fit: cover;
+    }
+}
+/* ACA TERMINA RESPONSIVE DSIGN */
